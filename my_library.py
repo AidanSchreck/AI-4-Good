@@ -9,6 +9,7 @@ def test_load():
 def test_it():
   return 'loaded'
 
+
 def cond_prob(table, evidence, evidence_val, target1, target_val):
   t_subset = up_table_subset(table, target1, 'equals', target_val)
   e_list = up_get_column(t_subset, evidence)
