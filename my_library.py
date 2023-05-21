@@ -6,7 +6,7 @@ def compute_probs(neg,pos):
 def test_load():
   return 'loaded'
 
-def test_load():
+def test_it():
   return 'loaded'
 
 def cond_prob(table, evidence, evidence_val, target1, target_val):
