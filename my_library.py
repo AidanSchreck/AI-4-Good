@@ -46,7 +46,7 @@ def metrics (pred_label_list):
     assert len(p)==2, f'Parameter is not a zipped list'
     
     for x in p:
-        assert isinstance(x, int), f'Each value in the pair is not an int'
+        assert isinstance(x, (int, float)), f'Each value in the pair is not an int'
         assert x>=0, f'Some value in the pair is < 0'
   
   accuracy = sum(p==a for p, a in pred_label_list)/len(pred_label_list)
